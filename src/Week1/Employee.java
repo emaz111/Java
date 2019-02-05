@@ -94,7 +94,9 @@ public class Employee {
     }
 
     public static void main (String[] args) {
-        Employee Employee1 = new Employee(123,"Jane Smith", "", "Barbara Forbes", 24000);
+        Employee Employee1 = new Employee(123,"Jane Smith");
+        System.out.println(Employee1);
+        Employee1.setSalary (24000);
         System.out.println(Employee1);
     }
 }

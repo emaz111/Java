@@ -6,13 +6,17 @@ package Week2;
 public class BankAccountDemo {
     public static void main (String[] args) {
 
-        BankAccountDemo Account = new BankAccount (1, "John Smith", 1200.0, "no");
+        BankAccount Account1 = new BankAccount ("1", "John Smith",0, false);
 
-        System.out.println ("Account = " + Account);
+        Account1.setBalance(500.0);
+        Account1.deposit(1200.0);
+        Account1.addInterest(3);
+        Account1.withdraw(230.0);
+
+        System.out.println ("Account = " + Account1);
 
 
         }
 
 
     }
-}
