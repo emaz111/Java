@@ -17,14 +17,14 @@ public class Team implements Comparable <Team> {
 
     public Team(String teamName, int matchesPlayed, int matchesWon, int matchesDrawn, int matchesLost, int matchesFor, int matchesAgainst, int matchPointsDifference, int matchPoints) {
         this.teamName = teamName;
-        this.matchesPlayed = 0;
-        this.matchesWon = 0;
-        this.matchesDrawn = 0;
-        this.matchesLost = 0;
-        this.matchesFor = 0;
-        this.matchesAgainst = 0;
-        this.matchPointsDifference = 0;
-        this.matchPoints = 0;
+        this.matchesPlayed = matchesPlayed;
+        this.matchesWon = matchesWon;
+        this.matchesDrawn = matchesDrawn;
+        this.matchesLost = matchesLost;
+        this.matchesFor = matchesFor;
+        this.matchesAgainst = matchesAgainst;
+        this.matchPointsDifference = matchPointsDifference;
+        this.matchPoints = matchPoints;
     }
 
     public String getTeamName() {

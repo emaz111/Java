@@ -13,7 +13,6 @@ public class Main {
             rugbyTeam.sortTeam ();
             rugbyTeam.printTeam ();
 
-            final String formatString = "%-4s %-12s %8s";
 
             System.out.println ();
             System.out.println ("Total Points: " +  rugbyTeam);

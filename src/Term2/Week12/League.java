@@ -7,7 +7,7 @@ import java.util.Collections;
 public class League {
 
 
-    private static final String TEAM_NAME = "Poppleton Dogs Home";
+    private static final String TEAM_NAME = "Super League Table";
 
     private ArrayList <Team> fundRaisers;
 

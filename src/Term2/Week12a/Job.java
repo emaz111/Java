@@ -1,5 +1,7 @@
 package Term2.Week12a;
 
+import jdk.nashorn.internal.scripts.JO;
+
 /**
  * Created by u1859269 on 31/01/2019.
  */
@@ -14,7 +16,7 @@ public class Job {
 
     public Job (String description, int priority, boolean finished){
        this.description = description;
-       this.priority = 0;
+       this.priority = priority;
        this.finished = finished;
     }
 
@@ -31,7 +33,7 @@ public class Job {
     }
 
     public void setPriority (int priority){
-        this.priority = 0;
+        this.priority = priority;
     }
 
     public boolean isFinished(){
@@ -42,18 +44,25 @@ public class Job {
         this.finished = finished;
     }
 
-    public void markFinished(){
-        if (this.setFinished(false);){
-            this.setFinished(true);
-            return;
-        }
+    public void markFinished() {
+        finished = true;
     }
 
-    public int compareTo (Job other){
 
+    public int compareTo (Job other){
+return getPriority();
     }
 
     public String display (){
+return display();
+    }
+
+    public static void main (String[] args){
+        Job one = new Job();
+
+        one.setPriority(1);
+        one.setDescription("hellos");
+
 
     }
 }
