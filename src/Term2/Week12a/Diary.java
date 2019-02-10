@@ -38,6 +38,6 @@ public class Diary {
     }
 
     public void sortDiary (){
-        Collections.sort(this.jobCollection);
+
     }
 }
