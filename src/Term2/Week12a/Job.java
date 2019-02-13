@@ -8,16 +8,16 @@ import jdk.nashorn.internal.scripts.JO;
 public class Job {
     private String description;
     private int priority;
-    private boolean finished;
+    private boolean jobFinished;
 
     public Job(){
 
     }
 
-    public Job (String description, int priority, boolean finished){
+    public Job (String description, int priority, boolean jobFinished){
        this.description = description;
        this.priority = priority;
-       this.finished = finished;
+       this.jobFinished = jobFinished;
     }
 
     public String getDescription (){
@@ -37,15 +37,15 @@ public class Job {
     }
 
     public boolean isFinished(){
-        return finished;
+        return jobFinished;
     }
 
-    public void setFinished (boolean finished){
-        this.finished = finished;
+    public void setFinished (boolean jobFinished){
+        this.jobFinished = jobFinished;
     }
 
     public void markFinished() {
-        finished = true;
+        jobFinished = true;
     }
 
 
@@ -62,6 +62,9 @@ return display();
 
         one.setPriority(1);
         one.setDescription("hellos");
+        one.setFinished(true);
+
+        one.
 
 
     }
