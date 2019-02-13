@@ -64,7 +64,6 @@ return display();
         one.setDescription("hellos");
         one.setFinished(true);
 
-        one.
 
 
     }
