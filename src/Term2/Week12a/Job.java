@@ -49,20 +49,26 @@ public class Job {
     }
 
 
-    public int compareTo (Job other){
-return getPriority();
+    @Override
+    public int compareTo(Job other) {
+        if (other.jobFinished = false) {
+            return 1;
+        } else if (other.jobFinished = true) {
+            return -1;
+        } else {
+            return 0;
+        }
     }
+}
 
     public String display (){
 return display();
     }
 
     public static void main (String[] args){
-        Job one = new Job();
+        Diary one = new Diary();
 
-        one.setPriority(1);
-        one.setDescription("hellos");
-        one.setFinished(true);
+        one.addJob(new Job());
 
 
 
